@@ -65,7 +65,7 @@
                     <!-- Menu Item Doctors -->
                     <li>
                         <a
-                            href="profile.html"
+                            href="{{route("mediplan.doctors")}}"
                             @click="selected = (selected === 'Profile' ? '':'Profile')"
                             class="menu-item group"
                             :class=" (selected === 'Profile') && (page === 'profile') ? 'menu-item-active' : 'menu-item-inactive'"

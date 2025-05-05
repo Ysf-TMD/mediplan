@@ -11,6 +11,23 @@ Route::get("/mediplan/dashboard", function () {
 Route::get("/", function () {
     return view("mediplan.dashboard");
 });
+
+Route::get("/doctors", function () {
+    return view("mediplan.content.doctors.doctors");
+})->prefix("mediplan")->name("mediplan.doctors");
+
+
+Route::get("/patients", function () {
+    return view("mediplan.content.patients.patients");
+})->prefix("mediplan");
+
+
+
+
+
+
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
