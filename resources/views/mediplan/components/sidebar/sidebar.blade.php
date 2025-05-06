@@ -10,10 +10,11 @@
     >
         <a href="index.html">
       <span class="logo" :class="sidebarToggle ? 'hidden' : ''">
-        <img class="dark:hidden" src="src/images/logo/logo.svg" alt="Logo" />
+        <img class="dark:hidden" width="50" src="{{asset("/images/logo/capture.png")}}" alt="Logo" />
         <img
-            class="hidden dark:block"
-            src="src/images/logo/logo-dark.svg"
+            class="hidden rounded-[50px] dark:block"
+            width="50"
+            src="{{asset("/images/logo/capture.png")}}"
             alt="Logo"
         />
       </span>
@@ -21,7 +22,7 @@
             <img
                 class="logo-icon"
                 :class="sidebarToggle ? 'lg:block' : 'hidden'"
-                src="src/images/logo/logo-icon.svg"
+                width="50" src="{{asset("/images/logo/capture.png")}}"
                 alt="Logo"
             />
         </a>
@@ -90,7 +91,7 @@
                                 class="menu-item-text"
                                 :class="sidebarToggle ? 'lg:hidden' : ''"
                             >
-                Doctors
+                Docteurs
               </span>
                         </a>
                     </li>
