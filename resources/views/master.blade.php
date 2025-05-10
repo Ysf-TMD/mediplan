@@ -10,6 +10,7 @@
     <title>Sign In| MediPlan</title>
     <link rel="icon" href="favicon.ico">
     <link href="{{asset("./css/style.css")}}" rel="stylesheet">
+    @vite('resources/js/app.js')
 </head>
 <body
     x-data="{ page: 'comingSoon', 'loaded': true, 'darkMode': false, 'stickyMenu': false, 'sidebarToggle': false, 'scrollTop': false }"
