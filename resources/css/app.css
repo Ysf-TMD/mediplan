@@ -5,3 +5,8 @@
 [x-cloak] {
     display: none;
 }
+@layer utilities {
+    .force-grid {
+        display: grid !important;
+    }
+}

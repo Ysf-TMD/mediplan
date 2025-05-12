@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('specialites', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->string('description' );
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('specialites');
+        Schema::dropIfExists('specialites.blade.php');
     }
 };

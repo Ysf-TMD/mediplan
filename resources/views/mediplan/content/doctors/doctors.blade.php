@@ -17,8 +17,6 @@
                     Liste des docteurs
                 </span>
             </div>
-
-
         </div>
 
 
