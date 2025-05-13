@@ -37,6 +37,7 @@ Route::controller(\App\Http\Controllers\SpecialiteController::class)->group(func
 {
     Route::get("/specialites/list","specialites")->name("specialites");
     Route::post("/add-specialite", "add_specialite")->name("add-specialite");
+    Route::delete("/specialite/delete/{id}", "deleteSpecialite")->name("deleteSpecialite");
 });
 Route::get("/doctors", function () {
     $notifications = \App\Models\Notification::all();

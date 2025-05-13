@@ -27,7 +27,7 @@ class SpecialiteController extends Controller
             ]);
             $specialite = new Specialite();
             $specialite->nom = $request->nom_specialite ;
-            $specialite->description = $request->description_specialite ; 
+            $specialite->description = $request->description_specialite ;
             $specialite->save();
             return back()->with("success","spécialité a été ajouté avec success !");
 
@@ -40,5 +40,14 @@ class SpecialiteController extends Controller
             return back()->with("error","echec d'insertion : erreur generale " . $exception);
         }*/
 
+    }
+    public function deleteSpecialite($id){
+        $spe = Specialite::findOrFail($id);
+        if($spe){
+        $spe->delete();
+        return back()->with("success","Spécialité supprimé avec success !");
+        }else{
+            return back()->with("error","Echec de suppression de la spécialité !  ");
+        }
     }
 }

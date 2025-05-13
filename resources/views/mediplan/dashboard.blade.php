@@ -6,9 +6,6 @@
         @include('mediplan.components.sidebar.sidebar')
         <!-- ===== Sidebar End ===== -->
 
-
-
-
         <!-- ===== Content Area Start ===== -->
         <div
             class="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto"
@@ -29,7 +26,7 @@
            @if(request()->url() != "/")
                <main class="p-4 mb-3  max-w-(--breakpoint-2xl) md:p-6">
                    @if(session()->has("success"))
-                       <div class="rounded-xl border border-success-500 bg-success-50 p-4 dark:border-success-500/30 dark:bg-success-500/15">
+                       <div class="rounded-xl mb-3 border border-success-500 bg-success-50 p-4 dark:border-success-500/30 dark:bg-success-500/15">
                            <div class="flex items-start gap-3">
                                <div class="-mt-0.5 text-success-500">
                                    <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
